@@ -3,7 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {box-sizing: border-box;}
-
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+.hidden:focus {
+  left: 0;
+}
 
 .header-box {
   background-color: #007399;
@@ -71,16 +78,21 @@ h4 {
     font-size: 18px;
     font-family: 'Leto', sans-serif;
     font-weight: lighter;
-    color:  #33ccff;
+    color:  #007EA8;
     }
 .ital{
     font-size: 18px;
     font-style: italic;
-    color:  #33ccff;
+    color:  #007EA8;
     }
-p   {
+p, figcaption   {
     font-size: 110%;
     font-family: 'Leto', sans-serif;
+    }
+    img{
+      width: 25%;
+      height: auto;
+      padding-bottom: 1rem;
     }
 
 .columns {
